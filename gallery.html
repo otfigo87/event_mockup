@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition Event</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* max-width: 800px; */
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px;
+        }
+        .date {    
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .date-box {
+            border: 2px solid #b0b3b6;
+            border-radius: 5px;
+            /* padding: 10px; */
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        .description {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .image {
+            width: 300px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .calendar {
+            width: 200px;
+            height: 100px; 
+        }
+        .left .right {
+            height: 100%;
+            font-size: 24px; 
+             
+        }
+        .left {
+            width: 60%
+        }
+        .right {
+            width: 40%;
+        }
+        #date{
+            font-size: 40px;
+            line-height: 30px;
+        }
+        #day{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header mb-5">Exhibition Title</h1>
+            <div class="d-flex align-items-center mr-auto mb-5"> 
+            <div class="calendar d-flex align-items-center border rounded">
+                <div class="left h-100 d-flex flex-column align-items-center">
+                    <p class="mt-3" id="date">01</p>
+                    <p id="day">Monday</p> 
+                </div>
+                <div class="right bg-danger text-light h-100 d-flex flex-column align-items-center justify-content-center">
+                    <p class="mt-3" id="month">June</p>
+                    <p class="mb-3"id="year">2023</p>
+                </div>
+            </div>
+            <span class="m-3 h6 text-secondary">TO</span>
+             <div class="calendar d-flex align-items-center border rounded">
+                <div class="left h-100 d-flex flex-column align-items-center">
+                    <p class="mt-3" id="date">21</p>
+                    <p id="day">Sunday</p> 
+                </div>
+                <div class="right bg-danger text-light h-100 d-flex flex-column align-items-center justify-content-center">
+                    <p class="mt-3" id="month">June</p>
+                    <p class="mb-3" id="year">2023</p>
+                </div>
+            </div>
+            </div>
+            <!-- <div class="d-flex align-items-center">    
+                <div class="date-box p-4"><span>Oct</span><span class="text-danger"><strong>01</strong></span></div> 
+                <span>TO</span>
+                <div class="date-box p-4"><span>Oct</span><span class="text-danger"><strong>20</strong></span></div>
+             
+           </div> -->
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla urna eget vehicula. Phasellus sodales tellus a lacus euismod, nec tristique ex mattis. Fusce euismod, velit a tempor congue, dolor ex ullamcorper odio, sit amet venenatis justo ligula id quam.
+            </p> 
+            <div class="buttons">
+              <a href="#" class="button btn btn-outline-corner">Learn More</a>
+              <a href="#" class="button">Get Tickets</a>
+            </div>         
+        </div>
+       
+    </div>
+    <div class="mr-4">
+        <img class="image" src="./Woodle_The-House-Built-on-Chicken-Legs_0.jpg" alt="Exhibition Image">
+        <div>
+        <img class="image" src="./Woodle_The-House-Built-on-Chicken-Legs_0.jpg" alt="Exhibition Image">
+    </div>
+    </div>
+
+    <script>
+        const date = document.getElementById("date");
+        const day = document.getElementById("day");
+        const month = document.getElementById("month");
+        const year = document.getElementById("year");
+    </script>
+    
+</body>
+</html>
